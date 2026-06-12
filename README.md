@@ -1,8 +1,8 @@
-# Leon Template One
+# Leon Frontend Evolution Case Study
 
 > قالب وكالة إبداعية ثابت — من تمرين HTML/CSS مبتدئ إلى **case study** جاهز للإنتاج.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-10CAB7?style=for-the-badge&logo=githubpages&logoColor=white)](https://AhmedAlMadhji.github.io/Template-One/)
+[![Live Demo](https://img.shields.io/badge/demo-live-10CAB7?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmedalmadhji.github.io/Leon-Frontend-Evolution-Case-Study/)
 [![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JS-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -13,8 +13,8 @@
 
 | | |
 |---|---|
-| **Live Demo** | [AhmedAlMadhji.github.io/Template-One](https://AhmedAlMadhji.github.io/Template-One/) |
-| **Source Code** | [github.com/AhmedAlMadhji/Template-One](https://github.com/AhmedAlMadhji/Template-One) |
+| **Live Demo** | [ahmedalmadhji.github.io/Leon-Frontend-Evolution-Case-Study](https://ahmedalmadhji.github.io/Leon-Frontend-Evolution-Case-Study/) |
+| **Source Code** | [github.com/AhmedAlMadhji/Leon-Frontend-Evolution-Case-Study](https://github.com/AhmedAlMadhji/Leon-Frontend-Evolution-Case-Study) |
 | **GitHub Profile** | [github.com/AhmedAlMadhji](https://github.com/AhmedAlMadhji) |
 | **Contact** | [ahmdalqhlany@gmail.com](mailto:ahmdalqhlany@gmail.com) |
 
@@ -22,7 +22,7 @@
 
 ## 📌 نظرة عامة
 
-**Leon Template One** هو landing page لوكالة إبداعية بسيطة، بدأ كمشروع تعليمي من [Elzero Web School](https://elzero.org/)، ثم تم تطويره ليصبح:
+**Leon Frontend Evolution Case Study** هو landing page لوكالة إبداعية بسيطة، بدأ كمشروع تعليمي من [Elzero Web School](https://elzero.org/)، ثم تم تطويره ليصبح:
 
 - قالباً **جاهزاً للإنتاج** (production-ready)
 - **case study** موثّق يُظهر التحول من مبتدئ إلى مهندس frontend
@@ -69,7 +69,7 @@
 ## 📁 هيكل المشروع
 
 ```
-Template-One/
+Leon-Frontend-Evolution-Case-Study/
 ├── index.html          # الصفحة الرئيسية + case study
 ├── favicon.svg         # أيقونة الموقع
 ├── CSS/
@@ -89,8 +89,8 @@ Template-One/
 ### 1. Clone
 
 ```bash
-git clone https://github.com/AhmedAlMadhji/Template-One.git
-cd Template-One
+git clone https://github.com/AhmedAlMadhji/Leon-Frontend-Evolution-Case-Study.git
+cd Leon-Frontend-Evolution-Case-Study
 ```
 
 ### 2. فتح المشروع
