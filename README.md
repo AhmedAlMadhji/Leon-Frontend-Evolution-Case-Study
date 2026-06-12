@@ -1,6 +1,6 @@
 # Leon Frontend Evolution Case Study
 
-> قالب وكالة إبداعية ثابت — من تمرين HTML/CSS مبتدئ إلى **case study** جاهز للإنتاج.
+> A static creative agency landing page — upgraded from a beginner HTML/CSS exercise into a **production-ready frontend case study**.
 
 [![Live Demo](https://img.shields.io/badge/demo-live-10CAB7?style=for-the-badge&logo=githubpages&logoColor=white)](https://ahmedalmadhji.github.io/Leon-Frontend-Evolution-Case-Study/)
 [![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -9,7 +9,7 @@
 
 ---
 
-## 🔗 روابط سريعة
+## Quick Links
 
 | | |
 |---|---|
@@ -20,40 +20,40 @@
 
 ---
 
-## 📌 نظرة عامة
+## Overview
 
-**Leon Frontend Evolution Case Study** هو landing page لوكالة إبداعية بسيطة، بدأ كمشروع تعليمي من [Elzero Web School](https://elzero.org/)، ثم تم تطويره ليصبح:
+**Leon Frontend Evolution Case Study** is a minimal creative agency landing page that started as an [Elzero Web School](https://elzero.org/) exercise and was later upgraded into:
 
-- قالباً **جاهزاً للإنتاج** (production-ready)
-- **case study** موثّق يُظهر التحول من مبتدئ إلى مهندس frontend
-- مناسباً للعرض في **portfolio** أمام recruiters
+- A **production-ready** static frontend template
+- A documented **case study** showing the shift from beginner to frontend engineer
+- A **portfolio piece** suitable for recruiters and technical interviews
 
-> التصميم البصري **لم يتغيّر** — التحسينات كانت هندسية بالكامل.
+> The visual design **stayed the same** — all improvements were engineering-focused.
 
 ---
 
-## ✨ ما تم تحسينه
+## What Was Improved
 
 ### Before → After
 
-| المجال | قبل | بعد |
-|--------|-----|-----|
-| **HTML** | بنية أساسية + أخطاء | Semantic + accessible |
-| **CSS** | ملف monolithic | Tokens + modular architecture |
-| **JavaScript** | لا يوجد | ~70 سطر vanilla (nav + scroll reveal) |
-| **SEO** | غير موجود | Meta + Open Graph + favicon |
-| **Accessibility** | غير مدروسة | ARIA + keyboard + skip link |
-| **UX** | Static / hover-only | Interactive + touch-friendly |
+| Area | Before | After |
+|------|--------|-------|
+| **HTML** | Basic structure with errors | Semantic + accessible |
+| **CSS** | Monolithic file | Design tokens + modular architecture |
+| **JavaScript** | None | ~70 lines of vanilla JS (nav + scroll reveal) |
+| **SEO** | Missing | Meta tags + Open Graph + favicon |
+| **Accessibility** | Not considered | ARIA + keyboard nav + skip link |
+| **UX** | Static / hover-only menu | Interactive + touch-friendly |
 
-### أقسام Case Study داخل الصفحة
+### In-Page Case Study Sections
 
-1. **Evolution** — مقارنة Before/After + جدول ملخّص
-2. **Engineering Thinking** — قرارات تقنية (لماذا refactor وليس rewrite)
-3. **What I Learned** — نمو المطوّر من implementer إلى engineer
+1. **Evolution** — Before/After comparison + summary table
+2. **Engineering Thinking** — Technical decisions (why refactor, not rewrite)
+3. **What I Learned** — Developer growth from implementer to engineer
 
 ---
 
-## 🛠️ التقنيات
+## Tech Stack
 
 - **HTML5** — semantic landmarks, ARIA, lazy loading
 - **CSS3** — custom properties, Grid, Flexbox, media queries, `:focus-visible`
@@ -62,74 +62,74 @@
 - **Google Fonts** — Work Sans
 - **Normalize.css** — cross-browser reset
 
-> بدون frameworks · بدون build tools · بدون backend
+> No frameworks · No build tools · No backend
 
 ---
 
-## 📁 هيكل المشروع
+## Project Structure
 
 ```
 Leon-Frontend-Evolution-Case-Study/
-├── index.html          # الصفحة الرئيسية + case study
-├── favicon.svg         # أيقونة الموقع
+├── index.html          # Main page + case study sections
+├── favicon.svg         # Site icon
 ├── CSS/
 │   ├── Normlazi.css    # Normalize.css
-│   ├── leon.css        # الأنماط الرئيسية
+│   ├── leon.css        # Main stylesheet
 │   └── all.min.css     # Font Awesome
 ├── JS/
 │   └── main.js         # Nav toggle + scroll reveal
-├── images/             # الصور والأصول البصرية
+├── images/             # Images and visual assets
 └── README.md
 ```
 
 ---
 
-## 🚀 التشغيل محلياً
+## Run Locally
 
-### 1. Clone
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/AhmedAlMadhji/Leon-Frontend-Evolution-Case-Study.git
 cd Leon-Frontend-Evolution-Case-Study
 ```
 
-### 2. فتح المشروع
+### 2. Open the project
 
-**الطريقة الأولى — مباشرة:**
+**Option A — Direct open:**
 
 ```bash
-# افتح index.html في المتصفح
+# Open index.html in your browser
 start index.html        # Windows
 open index.html         # macOS
 xdg-open index.html     # Linux
 ```
 
-**الطريقة الثانية — Live Server (موصى بها):**
+**Option B — Live Server (recommended):**
 
-1. ثبّت [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) في VS Code
-2. افتح المجلد واضغط **Go Live**
+1. Install [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code
+2. Open the project folder and click **Go Live**
 
-> لا حاجة لـ `npm install` — المشروع static بالكامل.
+> No `npm install` required — this is a fully static project.
 
 ---
 
-## 🎯 أقسام الصفحة
+## Page Sections
 
-| القسم | الوصف |
-|-------|--------|
-| Landing | Hero section مع خلفية كاملة |
-| Features | 3 ميزات رئيسية |
-| Services | خدمات الوكالة |
-| Portfolio | بطاقات مشاريع |
-| About | نبذة عن الوكالة |
+| Section | Description |
+|---------|-------------|
+| Landing | Full-height hero section |
+| Features | Three core value propositions |
+| Services | Agency service offerings |
+| Portfolio | Project showcase cards |
+| About | Agency introduction |
 | **Evolution** | Case study — Before/After |
-| **Thinking** | قرارات هندسية |
-| **Learned** | ماذا تعلّمت |
-| Contact | بريد + روابط تواصل |
+| **Thinking** | Engineering decisions |
+| **Learned** | Key takeaways |
+| Contact | Email + social links |
 
 ---
 
-## 👤 المطوّر
+## Author
 
 **Ahmed Raed (Ahmed AlMadhji)**
 
@@ -139,10 +139,10 @@ xdg-open index.html     # Linux
 
 ---
 
-## 📄 الترخيص
+## License
 
-هذا المشروع مفتوح للاستخدام التعليمي والعرض في portfolio.  
-التصميم الأصلي مستوحى من قالب Leon في Elzero Web School.
+This project is open for educational use and portfolio display.  
+The original design is inspired by the Leon template from Elzero Web School.
 
 ---
 
