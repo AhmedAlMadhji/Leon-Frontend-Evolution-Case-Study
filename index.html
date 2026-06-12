@@ -4,79 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leon Template One</title>
+    <meta name="description"
+        content="Leon agency template — a before-and-after case study documenting the upgrade from a beginner HTML/CSS exercise to a production-ready, accessible frontend.">
+    <meta name="theme-color" content="#10CAB7">
 
-    <!-- Render All Element Normally -->
+    <title>Leon Template One | Frontend Case Study — Ahmed Raed</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Leon Template One | Frontend Case Study">
+    <meta property="og:description"
+        content="A documented transformation: upgrading a beginner landing page into a production-ready, accessible frontend system.">
+    <meta property="og:image" content="images/landing.jpg">
+    <meta property="og:url" content="https://AhmedAlMadhji.github.io/Template-One/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="CSS/Normlazi.css">
 
-    <!-- Link for FontAwesome  -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="CSS/all.min.css">
 
-    <!-- Main Template Css File -->
+    <!-- Main Template CSS -->
     <link rel="stylesheet" href="CSS/leon.css">
 
-    <!-- Link of Work Sans font-family -->
+    <!-- Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header id="home">
         <div class="container">
-            <a href="#contact"><img class="Logo" src="images/logo.png" alt="Logo"></a>
+            <a href="#contact" class="logo-link">
+                <img class="Logo" src="images/logo.png" alt="Leon agency logo">
+            </a>
 
-            <nav class="Links">
-                <span class="icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
+            <nav class="Links" aria-label="Primary navigation">
+                <button type="button" class="icon nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+                    aria-label="Toggle navigation menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
 
-                <ul class="links">
+                <ul class="links" id="primary-nav">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">about</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#evolution">Case Study</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
 
-    <main>
-        <section class="landing">
+    <main id="main-content">
+        <section class="landing" aria-labelledby="landing-heading">
             <div class="intro-text">
-                <h1>Hello There</h1>
-                <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
+                <h1 id="landing-heading">Hello There</h1>
+                <p>We are Leon - Super Creative &amp; Minimal Agency Web Template</p>
             </div>
         </section>
+
         <div class="up">
-            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            <a href="#home" aria-label="Back to top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
         </div>
-        
-        <section class="features">
+
+        <section class="features reveal" aria-labelledby="features-heading">
+            <h2 id="features-heading" class="visually-hidden">Features</h2>
             <div class="container grid-3">
                 <article class="feat">
-                    <i class="fas fa-magic fa-3x"></i>
+                    <i class="fas fa-magic fa-3x" aria-hidden="true"></i>
                     <h3>Tell us your Idea</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique assumenda eaque, odit
                         ex eligendi ea, veniam lab</p>
                 </article>
 
-
                 <article class="feat">
-                    <i class="far fa-gem fa-3x"></i>
+                    <i class="far fa-gem fa-3x" aria-hidden="true"></i>
                     <h3>We will do all the Work</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione, incidunt nobis
                         dolor lab</p>
                 </article>
 
                 <article class="feat">
-                    <i class="fas fa-globe-asia fa-3x"></i>
+                    <i class="fas fa-globe-asia fa-3x" aria-hidden="true"></i>
                     <h3>Your product is worldwide</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione, incidunt nobis
                         dolor lab</p>
@@ -84,76 +106,69 @@
             </div>
         </section>
 
-        <section class="services" id="services">
+        <section class="services reveal" id="services" aria-labelledby="services-heading">
             <div class="container">
-                <h2 class="special-heading">Service</h2>
+                <h2 class="special-heading" id="services-heading">Service</h2>
                 <p>don't be busy, be productive</p>
                 <div class="services-content grid-3">
                     <article class="col">
-
                         <div class="sev">
-                            <i class="fas fa-palette fa-2x"></i>
+                            <i class="fas fa-palette fa-2x" aria-hidden="true"></i>
                             <div class="text">
                                 <h3>Graphic Design</h3>
                                 <p>Graphic design is the process of visual communication and problem-solving using one
-                                    or more of
-                                    typography, photography and illustration.</p>
+                                    or more of typography, photography and illustration.</p>
                             </div>
                         </div>
 
                         <div class="sev">
-                            <i class="fab fa-sketch fa-2x"></i>
+                            <i class="fab fa-sketch fa-2x" aria-hidden="true"></i>
                             <div class="text">
-                                <h3>UI & UX</h3>
-                                <p>Process of enhancing
-                                    user satisfaction with a product by improving the usability,accessibility,and
-                                    pleasure provided in the interaction.
-                                </p>
+                                <h3>UI &amp; UX</h3>
+                                <p>Process of enhancing user satisfaction with a product by improving the usability,
+                                    accessibility, and pleasure provided in the interaction.</p>
                             </div>
                         </div>
-
                     </article>
 
                     <article class="col">
-
                         <div class="sev">
-                            <i class="fas fa-vector-square fa-2x"></i>
+                            <i class="fas fa-vector-square fa-2x" aria-hidden="true"></i>
                             <div class="text">
                                 <h3>Web Design</h3>
                                 <p>Web design encompasses many different skills and disciplines in the production and
-                                    maintenance of
-                                    websites . </p>
+                                    maintenance of websites.</p>
                             </div>
                         </div>
 
                         <div class="sev">
-                            <i class="fa-solid fa-code fa-2x"></i>
+                            <i class="fa-solid fa-code fa-2x" aria-hidden="true"></i>
                             <div class="text">
                                 <h3>Web Development</h3>
                                 <p>Web development is a broad term for the work involved in developing a web site for
-                                    the Internet or an
-                                    intranet.</p>
+                                    the Internet or an intranet.</p>
                             </div>
                         </div>
-
                     </article>
 
                     <article class="col">
                         <div class="image image-column">
-                            <img src="images/maxim.jpg" alt="image">
+                            <img src="images/maxim.jpg" alt="Creative workspace" width="260" height="331"
+                                loading="lazy" decoding="async">
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio reveal" id="portfolio" aria-labelledby="portfolio-heading">
             <div class="container">
-                <h2 class="special-heading">Portfolio</h2>
+                <h2 class="special-heading" id="portfolio-heading">Portfolio</h2>
                 <p>If do you it right, it will last forever.</p>
                 <div class="portfolio-content grid-3">
                     <article class="card">
-                        <img src="images/portfolio-1.jpg" alt="portfolio-1">
+                        <img src="images/portfolio-1.jpg" alt="Portfolio project one" width="400" height="300"
+                            loading="lazy" decoding="async">
                         <div class="info">
                             <h3>Here Project</h3>
                             <p>My creative ability is very difficult to measure because it can manifest in so many
@@ -161,7 +176,8 @@
                         </div>
                     </article>
                     <article class="card">
-                        <img src="images/portfolio-2.jpg" alt="portfolio-2">
+                        <img src="images/portfolio-2.jpg" alt="Portfolio project two" width="400" height="300"
+                            loading="lazy" decoding="async">
                         <div class="info">
                             <h3>Here Project</h3>
                             <p>My creative ability is very difficult to measure because it can manifest in so many
@@ -169,7 +185,8 @@
                         </div>
                     </article>
                     <article class="card">
-                        <img src="images/portfolio-3.jpg" alt="portfolio-3">
+                        <img src="images/portfolio-3.jpg" alt="Portfolio project three" width="400" height="300"
+                            loading="lazy" decoding="async">
                         <div class="info">
                             <h3>Here Project</h3>
                             <p>My creative ability is very difficult to measure because it can manifest in so many
@@ -177,17 +194,18 @@
                         </div>
                     </article>
                 </div>
-
             </div>
         </section>
 
-
-        <section class="about" id="about">
+        <section class="about reveal" id="about" aria-labelledby="about-heading">
             <div class="container">
-                <h2 class="special-heading">About</h2>
+                <h2 class="special-heading" id="about-heading">About</h2>
                 <p>less is more work.</p>
                 <div class="about-content">
-                    <div class="image"><img src="images/about.jpg" alt="about"></div>
+                    <div class="image">
+                        <img src="images/about.jpg" alt="About Leon agency team" width="250" height="375"
+                            loading="lazy" decoding="async">
+                    </div>
                     <div class="text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas est voluptatum, quo rem modi
                             quibusdam, quod fuga voluptates vitae id voluptatibus, consectetur ratione suscipit illo.
@@ -201,29 +219,302 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <!-- ================================================================
+             Portfolio Case Study — documents this project's transformation
+             ================================================================ -->
+
+        <section class="case-study evolution reveal" id="evolution" aria-labelledby="evolution-heading">
             <div class="container">
-                <h2 class="special-heading">Contact</h2>
+                <h2 class="special-heading" id="evolution-heading">Evolution</h2>
+                <p>From beginner template to production-ready frontend.</p>
+
+                <p class="case-study-intro">
+                    This page began as an Elzero Web School exercise — a static agency landing page built with
+                    HTML and CSS. The visual design stayed intact; the engineering underneath was rebuilt for
+                    accessibility, maintainability, and real-world deployment.
+                </p>
+
+                <div class="case-study-actions">
+                    <a href="https://github.com/AhmedAlMadhji/Template-One" class="case-study-btn" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        View Source Code
+                    </a>
+                    <a href="https://github.com/AhmedAlMadhji" class="case-study-btn case-study-btn--outline"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                        GitHub Profile
+                    </a>
+                </div>
+
+                <div class="compare-grid">
+                    <article class="compare-card compare-card--before">
+                        <header class="compare-card__header">
+                            <i class="fas fa-history fa-2x" aria-hidden="true"></i>
+                            <h3>Before — Original Version</h3>
+                        </header>
+                        <ul class="compare-list">
+                            <li>
+                                <i class="fas fa-file-code" aria-hidden="true"></i>
+                                <span>Basic HTML structure with unclosed tags and invalid nesting</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-universal-access" aria-hidden="true"></i>
+                                <span>No accessibility — missing ARIA, skip link, and keyboard support</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-ban" aria-hidden="true"></i>
+                                <span>Zero JavaScript — hover-only navigation, no touch or keyboard fallback</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-link-slash" aria-hidden="true"></i>
+                                <span>Broken and placeholder links (malformed WhatsApp URL, empty hrefs)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-layer-group" aria-hidden="true"></i>
+                                <span>Monolithic CSS file with duplicated rules and display:none menu toggling</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                                <span>No SEO — missing meta description, Open Graph, and favicon</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="compare-card compare-card--after">
+                        <header class="compare-card__header">
+                            <i class="fas fa-rocket fa-2x" aria-hidden="true"></i>
+                            <h3>After — Upgraded Version</h3>
+                        </header>
+                        <ul class="compare-list">
+                            <li>
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                                <span>Semantic HTML — proper landmarks, single H1, corrected document structure</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-keyboard" aria-hidden="true"></i>
+                                <span>Full accessibility — ARIA labels, skip link, focus states, keyboard nav</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                <span>SEO optimized — meta description, Open Graph tags, favicon, theme-color</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-sitemap" aria-hidden="true"></i>
+                                <span>Refactored CSS — design tokens, utilities, modular sections, focus rings</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-mobile-screen" aria-hidden="true"></i>
+                                <span>Responsive polish — dedicated tablet breakpoints and mobile layout fixes</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-bolt" aria-hidden="true"></i>
+                                <span>Lightweight JS — nav toggle, scroll reveal, progressive enhancement</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="compare-table-wrap">
+                    <h3 class="compare-table__title">At a Glance</h3>
+                    <div class="compare-table-scroll">
+                        <table class="compare-table">
+                            <caption class="visually-hidden">Before and after comparison of engineering improvements
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Area</th>
+                                    <th scope="col">Before</th>
+                                    <th scope="col">After</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">HTML</th>
+                                    <td>Basic structure, broken tags</td>
+                                    <td>Semantic + accessible</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CSS</th>
+                                    <td>Monolithic file</td>
+                                    <td>Modular architecture with tokens</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">JavaScript</th>
+                                    <td>None</td>
+                                    <td>Lightweight enhancements (~70 lines)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">SEO</th>
+                                    <td>Missing</td>
+                                    <td>Fully optimized</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Accessibility</th>
+                                    <td>Not considered</td>
+                                    <td>WCAG-oriented improvements</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">UX</th>
+                                    <td>Static, hover-only menu</td>
+                                    <td>Interactive + keyboard-friendly</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study engineering reveal" id="engineering" aria-labelledby="engineering-heading">
+            <div class="container">
+                <h2 class="special-heading" id="engineering-heading">Thinking</h2>
+                <p>Engineering decisions behind the upgrade.</p>
+
+                <div class="thinking-grid grid-3">
+                    <article class="thinking-item">
+                        <i class="fas fa-eye fa-3x" aria-hidden="true"></i>
+                        <h3>Preserve, Don't Redesign</h3>
+                        <p>The original Leon layout is the design contract. Recruiters and users should see the same
+                            visual identity — proof that engineering skill and design skill are separate disciplines.
+                            Refactoring without redesign shows restraint and respect for existing systems.</p>
+                    </article>
+                    <article class="thinking-item">
+                        <i class="fas fa-feather fa-3x" aria-hidden="true"></i>
+                        <h3>Minimal JavaScript</h3>
+                        <p>No frameworks, no build step. A ~70-line vanilla script handles nav toggle and scroll
+                            reveal with progressive enhancement — content stays visible if JS fails. The right tool
+                            for a static portfolio piece is the smallest tool that works.</p>
+                    </article>
+                    <article class="thinking-item">
+                        <i class="fas fa-wrench fa-3x" aria-hidden="true"></i>
+                        <h3>Refactor, Don't Rewrite</h3>
+                        <p>The CSS was reorganized into tokens, utilities, and section blocks — not replaced. This
+                            mirrors real-world legacy work where you improve maintainability incrementally instead
+                            of throwing away working code.</p>
+                    </article>
+                    <article class="thinking-item">
+                        <i class="fas fa-puzzle-piece fa-3x" aria-hidden="true"></i>
+                        <h3>Maintainability First</h3>
+                        <p>CSS custom properties centralize colors, spacing, and transitions. One change to
+                            <code>--main-color</code> updates the entire system. Simple beats clever when another
+                            developer — or future you — needs to read this codebase.</p>
+                    </article>
+                    <article class="thinking-item">
+                        <i class="fas fa-universal-access fa-3x" aria-hidden="true"></i>
+                        <h3>Accessibility by Default</h3>
+                        <p>Skip links, ARIA attributes, keyboard menu control, and visible focus rings were added
+                            without altering the visual design. Accessibility is an engineering requirement, not a
+                            cosmetic layer applied at the end.</p>
+                    </article>
+                    <article class="thinking-item">
+                        <i class="fas fa-gauge-high fa-3x" aria-hidden="true"></i>
+                        <h3>Performance Awareness</h3>
+                        <p>Lazy-loaded images, deferred scripts, reduced-motion media queries, and opacity/transform
+                            transitions instead of layout-thrashing display toggles. Small choices that compound in
+                            production.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study learned reveal" id="learned" aria-labelledby="learned-heading">
+            <div class="container">
+                <h2 class="special-heading" id="learned-heading">Learned</h2>
+                <p>What this project taught me about frontend engineering.</p>
+
+                <div class="learned-content">
+                    <article class="learned-block">
+                        <div class="learned-block__icon">
+                            <i class="fas fa-arrow-up-right-dots fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="learned-block__text">
+                            <h3>From Templates to Systems</h3>
+                            <p>Building a template teaches syntax. Upgrading one teaches judgment — knowing which
+                                problems matter (broken HTML, missing alt text, no focus states) and which don't
+                                (adding React to a static page). This project marks the shift from "does it look
+                                right?" to "is it correct, accessible, and maintainable?"</p>
+                        </div>
+                    </article>
+
+                    <article class="learned-block">
+                        <div class="learned-block__icon">
+                            <i class="fas fa-recycle fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="learned-block__text">
+                            <h3>Legacy Code Is Real Work</h3>
+                            <p>Most professional frontend involves reading someone else's code — including your own
+                                from six months ago. Refactoring the Leon template simulated that experience: fixing
+                                unclosed tags, replacing hover-only patterns, and improving architecture without
+                                breaking what already worked visually.</p>
+                        </div>
+                    </article>
+
+                    <article class="learned-block">
+                        <div class="learned-block__icon">
+                            <i class="fas fa-hand-sparkles fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="learned-block__text">
+                            <h3>Accessibility Without Compromise</h3>
+                            <p>Before this upgrade, the menu was invisible to keyboard users and screen readers had
+                                nothing to work with. Adding ARIA, semantic landmarks, and focus management improved
+                                the experience for everyone — and the page looks exactly the same. That's the goal.</p>
+                        </div>
+                    </article>
+
+                    <article class="learned-block">
+                        <div class="learned-block__icon">
+                            <i class="fas fa-user-gear fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="learned-block__text">
+                            <h3>Engineer, Not Just Implementer</h3>
+                            <p>A UI implementer copies a design pixel by pixel. A frontend engineer asks why the
+                                WhatsApp link is broken, whether the menu works on touch devices, and if the CSS will
+                                scale when the project grows. This case study is evidence of that mindset — documented,
+                                deliberate, and ready to discuss in an interview.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact reveal" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 class="special-heading" id="contact-heading">Contact</h2>
                 <p>We are born to create.</p>
                 <div class="info">
                     <p class="label">Feel free to drop us a line at:</p>
                     <a href="mailto:ahmdalqhlany@gmail.com" class="link">ahmdalqhlany@gmail.com</a>
-                    <nav class="social">
-                        Find Us On Social Network
-                        <a href="whatsapp://send?abid=+967773069358&text=Hello%2C%20World!""><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/AboNight02"><i class="fab fa-github"></i></a>
+                    <nav class="social" aria-label="Social media links">
+                        <span class="social-label">Find Us On Social Network</span>
+                        <a href="https://wa.me/967773069358?text=Hello%2C%20World!" target="_blank"
+                            rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit us on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit us on Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/AhmedAlMadhji" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Ahmed AlMadhji on GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
                     </nav>
-
                 </div>
+            </div>
         </section>
-
     </main>
 
     <footer>
-        &copy; 2024 <span>Ahmed_Raed</span> All Right Reserved
+        &copy; 2026 <a href="https://github.com/AhmedAlMadhji" target="_blank" rel="noopener noreferrer"
+            class="footer-link"><span>Ahmed_Raed</span></a> All Right Reserved
     </footer>
+
+    <script src="JS/main.js" defer></script>
 </body>
 
 </html>
