@@ -1,4 +1,4 @@
-# Leon Template One
+# Leon — Frontend Evolution Case Study
 
 > قالب وكالة إبداعية ثابت — من تمرين HTML/CSS مبتدئ إلى **case study** جاهز للإنتاج.
 
